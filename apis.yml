@@ -1,7 +1,24 @@
 aid: medicocom
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/medicocom.png
 name: Medico.com
-description: Medico.com is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Medico.com was a Spanish-language online health portal and question-and-answer community,
+  offering health reference articles, health news, and topic-focused Q&A around conditions such as
+  diabetes, heart disease, and depression, initially targeting Hispanic markets. Backed by 500 Global,
+  FJ Labs, First Round Capital, and FirstMark Capital, it was acquired by Everyday Health. The medico.com
+  domain now 301-redirects to everydayhealth.com and exposes no independent developer portal, API, or
+  documentation. Surfaced in the API Evangelist network as a 500 Global portfolio lead; enrichment found
+  no live API surface.
 url: https://raw.githubusercontent.com/api-evangelist/medicocom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Health
+- Healthcare
+- Consumer Health
+- Q&A Community
+- Acquired
+- Everyday Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/medicocom-domain-security.yml
 - type: Website
   url: https://medico.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
